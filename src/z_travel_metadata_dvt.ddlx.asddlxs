@@ -1,0 +1,47 @@
+@Metadata.layer: #CORE
+annotate view Z_C_TRAVEL_DATA_DVT with
+{
+  @UI           : {
+  lineItem      : [{position: 10, importance: #HIGH}],
+  selectionField: [ {position: 10 } ]
+  }
+  TravelID;
+  @UI           : {
+        lineItem      : [{position: 15, importance: #HIGH}],
+  selectionField: [ {position: 15 } ]
+        }
+  AgencyID;
+  @UI           : {
+        lineItem      : [{position: 20, importance: #HIGH}],
+  selectionField: [ {position: 20 } ]
+        }
+  CustomerID;
+  @UI           : {
+        lineItem      : [{position: 30, importance: #HIGH}],
+  selectionField: [ {position: 30 } ]
+        }
+  BeginDate;
+  @UI           : {
+        lineItem      : [{position: 40, importance: #HIGH}],
+  selectionField: [ {position: 40 } ]
+        }
+  EndDate;
+  @UI           : {
+        lineItem      : [{position: 50, importance: #HIGH}]
+        }
+  TotalPrice;
+  // @UI           : {
+  //            lineItem      : [{position: 60, importance: #HIGH}]
+  //            }
+  // CurrencyCode;
+  @UI           : {
+             lineItem      : [{position: 60, importance: #HIGH}]
+             }
+  Memo;
+  @UI           : {
+             lineItem      : [{position: 70, importance: #HIGH}],
+  selectionField: [ {position: 60 } ]
+             }
+  status;
+
+}
