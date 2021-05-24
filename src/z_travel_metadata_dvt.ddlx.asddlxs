@@ -1,6 +1,13 @@
 @Metadata.layer: #CORE
 annotate view Z_C_TRAVEL_DATA_DVT with
 {
+  @UI.facet: [ { id:              'Travel',
+                purpose:         #STANDARD,
+                type:            #IDENTIFICATION_REFERENCE,
+                label:           'Travel',
+                position:        10 } ]
+
+
   @UI           : {
   lineItem      : [{position: 10, importance: #HIGH}],
   selectionField: [ {position: 10 } ]
@@ -39,9 +46,9 @@ annotate view Z_C_TRAVEL_DATA_DVT with
              }
   Memo;
   @UI           : {
-             lineItem      : [{position: 70, importance: #HIGH}],
+             lineItem      : [{position: 60, importance: #HIGH}],
   selectionField: [ {position: 60 } ]
              }
-  status;
+  Status;
 
 }
