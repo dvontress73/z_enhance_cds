@@ -7,7 +7,7 @@
 @Search.searchable: true
 
 define view Z_C_TRAVEL_DATA_DVT
-  as select from /DMO/I_Travel_U
+  as select from /DMO/I_Travel_U as travel
   association [1..1] to /DMO/I_Agency   as _Agency       on $projection.AgencyID = _Agency.AgencyID
   association [1..1] to /DMO/I_Customer as _Customer     on $projection.CustomerID = _Customer.CustomerID
   association [0..*] to I_CurrencyText  as _CurrencyText on $projection.CurrencyCode = _CurrencyText.Currency
