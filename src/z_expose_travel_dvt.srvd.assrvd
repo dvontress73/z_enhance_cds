@@ -1,4 +1,6 @@
 @EndUserText.label: 'Service exposes travel data'
 define service Z_expose_travel_dvt {
   expose Z_C_TRAVEL_DATA_DVT as Travels;
+  expose /DMO/I_Customer as Customer;
+  expose /DMO/I_Agency;
 }

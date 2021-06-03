@@ -1,4 +1,5 @@
 @Metadata.layer: #CORE
+@UI.presentationVariant: [{groupBy: [ 'AgencyID' , 'CustomerID' ]}]
 annotate view Z_C_TRAVEL_DATA_DVT with
 {
   @UI.facet: [ { id:              'Travel',
